@@ -1,5 +1,5 @@
 {
-  "name": "simple-npm-package",
+  "name": "@ashwanth1109/react-tooltip",
   "version": "1.0.0",
   "description": "",
   "repository": "https://github.com/ashwanth1109/repo-name",
@@ -15,12 +15,18 @@
   },
   "babel": {
     "presets": [
-      "@babel/preset-env"
+      "@babel/preset-env",
+      "@babel/preset-react"
     ]
   },
   "devDependencies": {
     "@babel/cli": "^7.6.0",
     "@babel/core": "^7.6.0",
-    "@babel/preset-env": "^7.6.0"
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0"
+  },
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-use-dimensions": "^1.2.1"
   }
 }

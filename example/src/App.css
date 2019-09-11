@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+.col {
+  flex-direction: column;
+}
+.aCenter {
+  align-items: center;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hoverTarget {
+  background: #222;
+  color: #fff;
+  padding: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.inputContainer {
+  position: absolute;
+  top: 16px;
+  display: flex;
+}
+
+.inputContainer > div {
+  margin: 0 4px;
+}
+
+.input {
+  width: 60px;
+}
