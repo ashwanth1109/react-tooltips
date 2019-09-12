@@ -1,18 +1,19 @@
 import React, { useState } from "react";
 import "./App.css";
 
-// import Tooltip from "../../lib";
+// import Tooltip from "@ashwanth1109/react-tooltip";
+import Tooltip from "./lib";
 
 export default () => {
   const [top, setTop] = useState(200);
   const [left, setLeft] = useState(200);
 
-  // const renderContent = () => (
-  //   <>
-  //     <div>Tooltip title goes here</div>
-  //     <div>Tooltip description goes here</div>
-  //   </>
-  // );
+  const renderContent = () => (
+    <>
+      <div>Tooltip title goes here</div>
+      <div>Tooltip description goes here</div>
+    </>
+  );
 
   console.log(Tooltip);
 
@@ -38,12 +39,11 @@ export default () => {
           />
         </div>
       </div>
-      {/* <Tooltip> */}
       <div className="hoverTarget" style={{ top, left }}>
-        Hover on this for tooltip
-        {/* <Tooltip>Hello</Tooltip> */}
+        <Tooltip htmlContent={renderContent} align="top">
+          <div className="hoverContainer">Hover on this for tooltip</div>
+        </Tooltip>
       </div>
-      {/* </Tooltip> */}
     </div>
   );
 };

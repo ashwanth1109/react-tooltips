@@ -24,12 +24,15 @@
 }
 
 .hoverTarget {
+  position: absolute;
+}
+
+.hoverContainer {
   background: #222;
   color: #fff;
   padding: 16px;
   border-radius: 4px;
   cursor: pointer;
-  position: absolute;
 }
 
 .inputContainer {

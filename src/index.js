@@ -14,7 +14,7 @@ export default ({ children, htmlContent, showOnClick }) => {
   const [fRef, { width: fWidth, height: fHeight }] = useDimension();
 
   return (
-    <div className="container">
+    <div style={{ position: "relative" }}>
       <div onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} ref={pRef}>
         {children}
       </div>

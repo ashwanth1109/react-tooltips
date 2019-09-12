@@ -8,6 +8,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@ashwanth1109/react-tooltip": "^1.0.1",
     "react": "16.9.0",
     "react-dom": "16.9.0"
   },
